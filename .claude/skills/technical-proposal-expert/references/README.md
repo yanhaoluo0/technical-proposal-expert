@@ -10,6 +10,7 @@
 | design-report | design-report.md | 方案设计报告、技术方案设计、系统设计说明 |
 | test-report | test-report.md | 测试报告、测试总结、测试文档 |
 | weekly-report | weekly-report.md | 周报、工作周报、周总结 |
+| script | script.md | 剧本、分镜脚本、宣传片/视频脚本 |
 | general | general.md | 常规文档（兜底：无法匹配时使用） |
 
 ## 匹配规则
@@ -26,4 +27,5 @@
 | 方案设计报告、设计报告、技术方案设计、系统设计 | design-report.md |
 | 测试报告、测试总结、测试文档、测试说明 | test-report.md |
 | 周报、周总结、工作周报、周度汇报 | weekly-report.md |
+| 剧本、脚本、分镜、分镜头脚本、宣传片脚本、视频脚本 | script.md |
 | 其他、随便、通用、一般文档、未明确 | general.md（兜底） |

@@ -24,6 +24,7 @@ description: Multi-scenario document writing for Chinese formal documents. Use w
 | 方案设计报告、设计报告、技术方案设计、系统设计 | design-report | references/design-report.md |
 | 测试报告、测试总结、测试文档、测试说明 | test-report | references/test-report.md |
 | 周报、周总结、工作周报、周度汇报 | weekly-report | references/weekly-report.md |
+| 剧本、脚本、分镜、宣传片脚本、视频脚本 | script | references/script.md |
 | 其他、未明确、随便、通用、一般文档 | general（兜底） | references/general.md |
 
 更完整的映射与说明见 `references/README.md`。
@@ -90,7 +91,7 @@ description: Multi-scenario document writing for Chinese formal documents. Use w
 
 **已加载文档写作专家模式（多场景）**
 
-支持场景：技术标书、方案设计报告、测试报告、周报；其他类型将按「常规」文档处理。
+支持场景：技术标书、方案设计报告、测试报告、周报、剧本；其他类型将按「常规」文档处理。
 
 请告诉我：**本次要写的是哪类文档？**（若已明确，可直接说文档类型，我将匹配对应场景并加载撰写指引。）
 
