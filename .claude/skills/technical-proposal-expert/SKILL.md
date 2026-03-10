@@ -25,6 +25,7 @@ description: Multi-scenario document writing for Chinese formal documents. Use w
 | 测试报告、测试总结、测试文档、测试说明 | test-report | references/test-report.md |
 | 周报、周总结、工作周报、周度汇报 | weekly-report | references/weekly-report.md |
 | 剧本、脚本、分镜、宣传片脚本、视频脚本 | script | references/script.md |
+| **自定义、自己的skill、新建规则、从零开始** | **custom** | **custom-skills/<名称>/SKILL.md** |
 | 其他、未明确、随便、通用、一般文档 | general（兜底） | references/general.md |
 
 更完整的映射与说明见 `references/README.md`。
@@ -41,6 +42,17 @@ description: Multi-scenario document writing for Chinese formal documents. Use w
 ### 4. 加载场景指引
 
 匹配到场景后，**必须读取**本 skill 目录下对应的 reference 文件（`references/<场景标识>.md`），并按其中流程与约束执行。通用写作要求（见下）与场景指引**同时生效**。
+
+#### 4.1 自定义场景（custom）特殊处理
+
+当匹配到 **custom** 场景时，按以下规则处理：
+
+1. **询问自定义skill名称**：请用户指定要使用的自定义skill（如「我的营销文案」「企业介绍」等）
+2. **查找自定义规则**：从 `custom-skills/<名称>/SKILL.md` 加载
+3. **独立执行**：**不使用**本项目的任何内置规则（禁词表、去列表化、通用写作要求等），完全按照自定义skill的规则执行
+4. **reference加载**：如自定义skill有 references 文件，也一并加载
+
+> 注意：自定义场景下，SKILL.md 中的「通用文本书写要求」**不生效**。
 
 ### 5. 行业用语 / 专有名词（可选，润色用）
 
@@ -91,7 +103,9 @@ description: Multi-scenario document writing for Chinese formal documents. Use w
 
 **已加载文档写作专家模式（多场景）**
 
-支持场景：技术标书、方案设计报告、测试报告、周报、剧本；其他类型将按「常规」文档处理。
+支持场景：技术标书、方案设计报告、测试报告、周报、剧本、**自定义**；其他类型将按「常规」文档处理。
+
+> **关于自定义**：选择「自定义」时，将加载 `custom-skills/` 下的自定义规则，**不使用**本项目的内置规则（禁词表、去列表化等）。
 
 请告诉我：**本次要写的是哪类文档？**（若已明确，可直接说文档类型，我将匹配对应场景并加载撰写指引。）
 
